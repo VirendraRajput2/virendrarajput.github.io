@@ -1,0 +1,118 @@
+
+:root {
+  --bg: #f9f9f9;
+  --text: #1e1e1e;
+  --primary: #0066cc;
+  --accent: #444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 2rem 10%;
+  scroll-behavior: smooth;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+header h1 {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+header p {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+section {
+  margin-top: 3rem;
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+section ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.project,
+.exp {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem 5%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
